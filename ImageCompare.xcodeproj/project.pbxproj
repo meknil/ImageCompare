@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63B8CBAA18C938F600566237 /* CommandLineArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B8CBA918C938F600566237 /* CommandLineArgs.m */; };
+		63B8CBAC18C9489C00566237 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC246C18A0325F008510DD /* AppKit.framework */; };
+		63BC245D18A02C46008510DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC245C18A02C46008510DD /* Foundation.framework */; };
+		63BC246018A02C46008510DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC245F18A02C46008510DD /* main.m */; };
+		63BC246B18A02E91008510DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC246A18A02E91008510DD /* CoreGraphics.framework */; };
+		63CE510718A427FF004790D9 /* ImageComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE510618A427FF004790D9 /* ImageComparator.m */; };
+		63CE512518A428BE004790D9 /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE510B18A428BE004790D9 /* ANImageBitmapRep.m */; };
+		63CE512618A428BE004790D9 /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE510D18A428BE004790D9 /* BitmapContextRep.m */; };
+		63CE512718A428BE004790D9 /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511018A428BE004790D9 /* NSImage+ANImageBitmapRep.m */; };
+		63CE512818A428BE004790D9 /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511218A428BE004790D9 /* OSCommonImage.m */; };
+		63CE512918A428BE004790D9 /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511418A428BE004790D9 /* UIImage+ANImageBitmapRep.m */; };
+		63CE512A18A428BE004790D9 /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511718A428BE004790D9 /* CGContextCreator.m */; };
+		63CE512B18A428BE004790D9 /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511918A428BE004790D9 /* CGImageContainer.m */; };
+		63CE512C18A428BE004790D9 /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511C18A428BE004790D9 /* BitmapContextManipulator.m */; };
+		63CE512D18A428BE004790D9 /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE511E18A428BE004790D9 /* BitmapCropManipulator.m */; };
+		63CE512E18A428BE004790D9 /* BitmapDrawManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE512018A428BE004790D9 /* BitmapDrawManipulator.m */; };
+		63CE512F18A428BE004790D9 /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE512218A428BE004790D9 /* BitmapRotationManipulator.m */; };
+		63CE513018A428BE004790D9 /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE512418A428BE004790D9 /* BitmapScaleManipulator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63BC245718A02C46008510DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		634F316318C952CF00C74805 /* compare-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compare-image.png"; sourceTree = "<group>"; };
+		634F316418C952CF00C74805 /* reference-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reference-image.png"; sourceTree = "<group>"; };
+		63B8CBA818C938F600566237 /* CommandLineArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLineArgs.h; sourceTree = "<group>"; };
+		63B8CBA918C938F600566237 /* CommandLineArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandLineArgs.m; sourceTree = "<group>"; };
+		63B8CBAB18C93A3C00566237 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Defines.h; path = ../Defines.h; sourceTree = "<group>"; };
+		63BC245918A02C46008510DD /* ImageCompare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageCompare; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BC245C18A02C46008510DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63BC245F18A02C46008510DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63BC246218A02C46008510DD /* ImageCompare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageCompare-Prefix.pch"; sourceTree = "<group>"; };
+		63BC246A18A02E91008510DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63BC246C18A0325F008510DD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		63CE510518A427FF004790D9 /* ImageComparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageComparator.h; sourceTree = "<group>"; };
+		63CE510618A427FF004790D9 /* ImageComparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageComparator.m; sourceTree = "<group>"; };
+		63CE510A18A428BE004790D9 /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageBitmapRep.h; sourceTree = "<group>"; };
+		63CE510B18A428BE004790D9 /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageBitmapRep.m; sourceTree = "<group>"; };
+		63CE510C18A428BE004790D9 /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextRep.h; sourceTree = "<group>"; };
+		63CE510D18A428BE004790D9 /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextRep.m; sourceTree = "<group>"; };
+		63CE510F18A428BE004790D9 /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		63CE511018A428BE004790D9 /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		63CE511118A428BE004790D9 /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCommonImage.h; sourceTree = "<group>"; };
+		63CE511218A428BE004790D9 /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCommonImage.m; sourceTree = "<group>"; };
+		63CE511318A428BE004790D9 /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		63CE511418A428BE004790D9 /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		63CE511618A428BE004790D9 /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		63CE511718A428BE004790D9 /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		63CE511818A428BE004790D9 /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		63CE511918A428BE004790D9 /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		63CE511B18A428BE004790D9 /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextManipulator.h; sourceTree = "<group>"; };
+		63CE511C18A428BE004790D9 /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextManipulator.m; sourceTree = "<group>"; };
+		63CE511D18A428BE004790D9 /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCropManipulator.h; sourceTree = "<group>"; };
+		63CE511E18A428BE004790D9 /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCropManipulator.m; sourceTree = "<group>"; };
+		63CE511F18A428BE004790D9 /* BitmapDrawManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapDrawManipulator.h; sourceTree = "<group>"; };
+		63CE512018A428BE004790D9 /* BitmapDrawManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapDrawManipulator.m; sourceTree = "<group>"; };
+		63CE512118A428BE004790D9 /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		63CE512218A428BE004790D9 /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		63CE512318A428BE004790D9 /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		63CE512418A428BE004790D9 /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapScaleManipulator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63BC245618A02C46008510DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B8CBAC18C9489C00566237 /* AppKit.framework in Frameworks */,
+				63BC246B18A02E91008510DD /* CoreGraphics.framework in Frameworks */,
+				63BC245D18A02C46008510DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		634F316218C952CF00C74805 /* ExampleImages */ = {
+			isa = PBXGroup;
+			children = (
+				634F316318C952CF00C74805 /* compare-image.png */,
+				634F316418C952CF00C74805 /* reference-image.png */,
+			);
+			path = ExampleImages;
+			sourceTree = "<group>";
+		};
+		63BC245018A02C46008510DD = {
+			isa = PBXGroup;
+			children = (
+				634F316218C952CF00C74805 /* ExampleImages */,
+				63CE510818A428BE004790D9 /* Dependencies */,
+				63BC245E18A02C46008510DD /* ImageCompare */,
+				63BC245B18A02C46008510DD /* Frameworks */,
+				63BC245A18A02C46008510DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63BC245A18A02C46008510DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63BC245918A02C46008510DD /* ImageCompare */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63BC245B18A02C46008510DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63BC246C18A0325F008510DD /* AppKit.framework */,
+				63BC246A18A02E91008510DD /* CoreGraphics.framework */,
+				63BC245C18A02C46008510DD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63BC245E18A02C46008510DD /* ImageCompare */ = {
+			isa = PBXGroup;
+			children = (
+				63BC246118A02C46008510DD /* Supporting Files */,
+				63B8CBAB18C93A3C00566237 /* Defines.h */,
+				63BC245F18A02C46008510DD /* main.m */,
+				63CE510518A427FF004790D9 /* ImageComparator.h */,
+				63CE510618A427FF004790D9 /* ImageComparator.m */,
+				63B8CBA818C938F600566237 /* CommandLineArgs.h */,
+				63B8CBA918C938F600566237 /* CommandLineArgs.m */,
+			);
+			path = ImageCompare;
+			sourceTree = "<group>";
+		};
+		63BC246118A02C46008510DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63BC246218A02C46008510DD /* ImageCompare-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63CE510818A428BE004790D9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				63CE510918A428BE004790D9 /* ANImageBitmapRep */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		63CE510918A428BE004790D9 /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				63CE510A18A428BE004790D9 /* ANImageBitmapRep.h */,
+				63CE510B18A428BE004790D9 /* ANImageBitmapRep.m */,
+				63CE510C18A428BE004790D9 /* BitmapContextRep.h */,
+				63CE510D18A428BE004790D9 /* BitmapContextRep.m */,
+				63CE510E18A428BE004790D9 /* Compatibility */,
+				63CE511518A428BE004790D9 /* CoreGraphics */,
+				63CE511A18A428BE004790D9 /* Manipulators */,
+			);
+			path = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		63CE510E18A428BE004790D9 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				63CE510F18A428BE004790D9 /* NSImage+ANImageBitmapRep.h */,
+				63CE511018A428BE004790D9 /* NSImage+ANImageBitmapRep.m */,
+				63CE511118A428BE004790D9 /* OSCommonImage.h */,
+				63CE511218A428BE004790D9 /* OSCommonImage.m */,
+				63CE511318A428BE004790D9 /* UIImage+ANImageBitmapRep.h */,
+				63CE511418A428BE004790D9 /* UIImage+ANImageBitmapRep.m */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		63CE511518A428BE004790D9 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				63CE511618A428BE004790D9 /* CGContextCreator.h */,
+				63CE511718A428BE004790D9 /* CGContextCreator.m */,
+				63CE511818A428BE004790D9 /* CGImageContainer.h */,
+				63CE511918A428BE004790D9 /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		63CE511A18A428BE004790D9 /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				63CE511B18A428BE004790D9 /* BitmapContextManipulator.h */,
+				63CE511C18A428BE004790D9 /* BitmapContextManipulator.m */,
+				63CE511D18A428BE004790D9 /* BitmapCropManipulator.h */,
+				63CE511E18A428BE004790D9 /* BitmapCropManipulator.m */,
+				63CE511F18A428BE004790D9 /* BitmapDrawManipulator.h */,
+				63CE512018A428BE004790D9 /* BitmapDrawManipulator.m */,
+				63CE512118A428BE004790D9 /* BitmapRotationManipulator.h */,
+				63CE512218A428BE004790D9 /* BitmapRotationManipulator.m */,
+				63CE512318A428BE004790D9 /* BitmapScaleManipulator.h */,
+				63CE512418A428BE004790D9 /* BitmapScaleManipulator.m */,
+			);
+			path = Manipulators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63BC245818A02C46008510DD /* ImageCompare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63BC246718A02C46008510DD /* Build configuration list for PBXNativeTarget "ImageCompare" */;
+			buildPhases = (
+				63BC245518A02C46008510DD /* Sources */,
+				63BC245618A02C46008510DD /* Frameworks */,
+				63BC245718A02C46008510DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCompare;
+			productName = ImageCompare;
+			productReference = 63BC245918A02C46008510DD /* ImageCompare */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63BC245118A02C46008510DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mathias Linke";
+			};
+			buildConfigurationList = 63BC245418A02C46008510DD /* Build configuration list for PBXProject "ImageCompare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63BC245018A02C46008510DD;
+			productRefGroup = 63BC245A18A02C46008510DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63BC245818A02C46008510DD /* ImageCompare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63BC245518A02C46008510DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CE512D18A428BE004790D9 /* BitmapCropManipulator.m in Sources */,
+				63BC246018A02C46008510DD /* main.m in Sources */,
+				63CE510718A427FF004790D9 /* ImageComparator.m in Sources */,
+				63CE512B18A428BE004790D9 /* CGImageContainer.m in Sources */,
+				63CE512918A428BE004790D9 /* UIImage+ANImageBitmapRep.m in Sources */,
+				63CE512F18A428BE004790D9 /* BitmapRotationManipulator.m in Sources */,
+				63B8CBAA18C938F600566237 /* CommandLineArgs.m in Sources */,
+				63CE512618A428BE004790D9 /* BitmapContextRep.m in Sources */,
+				63CE512C18A428BE004790D9 /* BitmapContextManipulator.m in Sources */,
+				63CE513018A428BE004790D9 /* BitmapScaleManipulator.m in Sources */,
+				63CE512A18A428BE004790D9 /* CGContextCreator.m in Sources */,
+				63CE512718A428BE004790D9 /* NSImage+ANImageBitmapRep.m in Sources */,
+				63CE512E18A428BE004790D9 /* BitmapDrawManipulator.m in Sources */,
+				63CE512818A428BE004790D9 /* OSCommonImage.m in Sources */,
+				63CE512518A428BE004790D9 /* ANImageBitmapRep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63BC246518A02C46008510DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63BC246618A02C46008510DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63BC246818A02C46008510DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageCompare/ImageCompare-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63BC246918A02C46008510DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageCompare/ImageCompare-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63BC245418A02C46008510DD /* Build configuration list for PBXProject "ImageCompare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63BC246518A02C46008510DD /* Debug */,
+				63BC246618A02C46008510DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63BC246718A02C46008510DD /* Build configuration list for PBXNativeTarget "ImageCompare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63BC246818A02C46008510DD /* Debug */,
+				63BC246918A02C46008510DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63BC245118A02C46008510DD /* Project object */;
+}
