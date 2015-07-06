@@ -52,11 +52,17 @@
 
 -(double) colorDistancePixel:(BMPixel)cmpPixel  pixel:(BMPixel)refPixel withAlpha:(BOOL)withAlpha
 {
-
+#if CGFLOAT_IS_DOUBLE
+    double redDiff = fabs(cmpPixel.red-refPixel.red);
+    double greenDiff = fabs(cmpPixel.green-refPixel.green);
+    double blueDiff = fabs(cmpPixel.blue-refPixel.blue);
+    double alphaDiff = fabs(cmpPixel.alpha-refPixel.alpha);
+#else
     float redDiff = fabsf(cmpPixel.red-refPixel.red);
     float greenDiff = fabsf(cmpPixel.green-refPixel.green);
     float blueDiff = fabsf(cmpPixel.blue-refPixel.blue);
     float alphaDiff = fabsf(cmpPixel.alpha-refPixel.alpha);
+#endif
     double distance = (withAlpha ? redDiff*redDiff+greenDiff*greenDiff+blueDiff*blueDiff+alphaDiff*alphaDiff : redDiff*redDiff+greenDiff*greenDiff+blueDiff*blueDiff);
     return distance;
 }
