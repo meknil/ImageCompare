@@ -72,12 +72,15 @@
     ANImageBitmapRep *toCompareImageRep = [ANImageBitmapRep imageBitmapRepWithImage:tocompareImage];
     ANImageBitmapRep *diffImageRep = [ANImageBitmapRep imageBitmapRepWithImage:referenceImage]; // taken from reference
     ANImageBitmapRep *maskImageRep = (useMask ? [ANImageBitmapRep imageBitmapRepWithImage:maskImage] : nil);
-    
+
     if(CGSizeEqualToSize(tocompareImage.size,referenceImage.size) && (!useMask || CGSizeEqualToSize(tocompareImage.size,maskImage.size)))
     {
         BMPixel redPixel = BMPixelMake(1.0, 0.0, 0.0, 0.8);
-        NSUInteger refW = referenceImage.size.width;
-        NSUInteger refH = referenceImage.size.height;
+        // NSImage.size is the size based on the screen resolution (1x, 2x ,3x)
+        // NSImageRep.pixelsWide/.pixelsHigh are the size as stored in the file
+        // ANImageBitmapRep.bitmapSize does the same.
+        NSUInteger refW = referenceImageRep.bitmapSize.x;
+        NSUInteger refH = referenceImageRep.bitmapSize.y;
         BMPixel ignorePixel = [maskImageRep getPixelAtPoint:BMPointMake(0, 0)];
         if(self.verbose)
         {
