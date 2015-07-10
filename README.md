@@ -20,7 +20,7 @@ Usage
 After compiling, you can put the binary where you want.
 
 ```
-Usage:   ImageCompare [options] <compare-file> <reference-file> <difference-file> [<mask-file>]
+Usage:   ImageCompare [options] <compare-file> <reference-file> [<difference-file>] [<mask-file>]
 
 Options: -h           print this help info
          -v           be more verbose
