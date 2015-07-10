@@ -28,16 +28,18 @@ int main(int argc, const char * argv[])
         {
             NSString *cmpFileName =  [args.fileNames objectAtIndex:0];
             NSString *refFileName =  [args.fileNames objectAtIndex:1];
-            NSString *diffFileName = [args.fileNames objectAtIndex:2];
+            NSString *diffFileName = (args.fileNames.count==3) ? [args.fileNames objectAtIndex:2] : nil;
             NSString *maskFileName = (args.fileNames.count==4) ? [args.fileNames objectAtIndex:3] : nil;
             if(args.verbose)
             {
                 printf("Compare image     %s\n"
-                       "with image        %s\n"
-                       "create diff image %s\n",
+                       "with image        %s\n",
                        [cmpFileName UTF8String],
-                       [refFileName UTF8String],
-                       [diffFileName UTF8String]);
+                       [refFileName UTF8String]);
+                if(diffFileName!=nil)
+                {
+                    printf("create diff image %s\n",  [diffFileName UTF8String]);
+                }
                 if(maskFileName!=nil)
                 {
                     printf("masked by image   %s\n" , [maskFileName UTF8String]);

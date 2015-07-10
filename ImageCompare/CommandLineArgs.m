@@ -76,7 +76,7 @@
         }
     }
     
-    if(self.fileNames.count < 3)
+    if(self.fileNames.count < 2)
     {
         error = YES;
     }
@@ -86,7 +86,7 @@
 
 - (void) printUsageText
 {
-    printf( "Usage:   ImageCompare [options] <compare-file> <reference-file> <difference-file> [<mask-file>]\n"
+    printf( "Usage:   ImageCompare [options] <compare-file> <reference-file> [<difference-file>] [<mask-file>]\n"
             "\n"
             "Options: -h           print this help info\n"
             "         -v           be more verbose\n"
